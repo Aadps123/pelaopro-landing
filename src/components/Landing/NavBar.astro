@@ -1,0 +1,72 @@
+<!-- Menu Icon Import -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+<!-- Navbar -->
+<header>
+<!--Logo -->
+    <a href="https://pelaopro.vercel.app/" class="logo"><img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Logo_Black.png" alt="Logo" loading="lazy"></a>
+    <!-- Navbar links -->
+    <ul class="navbar">
+           <li><a href="/nosotros">Nosotros</a></li>
+           <li><a href="/replicabilidad">Replicabilidad</a></li>
+           <li><a href="/chatbot">Chatbot</a></li>
+           <li><a href="/faqs">FAQ's</a></li>
+           <li><a href="/apoyanos">Apóyanos</a></li>
+    </ul>
+    <!-- Menu Icon -->
+    <div class="hamburger" id="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+    </div>
+</header>
+
+<style>
+    * {
+        /*Overall*/
+        overflow-x: hidden;
+        /*Styles*/
+        list-style: none;
+        text-decoration: none;
+        /*Font styles*/
+        color: black;
+        font-family: poppins, sans-serif;
+        font-size: clamp(1rem, 2vw, 12px.);
+    }
+    header {
+        /*Margin, padding, sizing*/
+        padding-top: 50px;
+        margin-left: 10%;
+        width: 100%;
+        
+        /*Styles*/
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        background: transparent;
+        transition: all 0.5 ease;
+    }
+    .logo img {
+        /*Size*/
+        width: auto;
+        max-height: 45px;
+        min-height: 25px;
+    }
+    .navbar {
+        /*Margin, padding, sizing*/
+        /*Styles*/
+        display: flex;
+        gap: 2rem;
+    }
+    .navbar li {
+        /*Margin, padding, sizing*/
+        margin: 0;
+        /*Styles*/
+        display: flex;
+        align-items: first baseline;
+    }
+    .navbar a:hover {
+        /*Styles*/
+        background-color: #008cff1a;
+        text-decoration: none;
+    }
+</style>
+<script></script>
