@@ -2,6 +2,7 @@
 import Analytics from '@vercel/analytics/astro'
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 import NavBar from "../components/Landing/NavBar.astro"
+import Hero from "../components/Landing/Hero.astro"
 ---
 
 <html lang="en">
@@ -23,7 +24,7 @@ import NavBar from "../components/Landing/NavBar.astro"
 		<!-- NavBar -->
 		<NavBar></NavBar>
 		<!-- Hero -->
-
+		<Hero></Hero>
 		<!-- ¿Quienés somos? -->
 
 		<!-- 1rst Gen -->
@@ -47,3 +48,12 @@ import NavBar from "../components/Landing/NavBar.astro"
     	<SpeedInsights />
 	</body>
 </html>
+<style>
+		/* Global Styles */
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+			overflow-x: hidden;
+		}
+	</style>

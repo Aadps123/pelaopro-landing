@@ -1,0 +1,78 @@
+<div class="hero">
+    <div class="heroImgs">
+        <div class="heroMainImgs">
+            <!-- Persona 1 -->
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="P1" class="PersonaUno">
+        </div>
+        <div class="HeroBack">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo">
+        </div>
+    </div>
+    <div class="heroText">
+        <div class="heroP"></div>
+        <div class="HeroFirma"></div>
+    </div>
+</div>
+<style>
+    * {
+        /*Overall*/
+        overflow-x: hidden;
+        z-index: 1;
+        margin-top:50px;
+    }
+    /*Hero*/
+    /*Fondo*/
+    .HeroBack {
+        z-index: 1;
+    }
+    /*Fondo Azul*/
+    .fondo {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    /*Personas*/
+        /*Persona 1*/
+        .PersonaUno {
+            position: absolute;
+            z-index: 90;
+            width: auto;
+            max-height: 754px;
+            /*Posicion*/
+            position: absolute;
+            top: 40%;
+            left: 45%;      
+            transform: translate(-45%, -50%);
+            
+            
+        }
+    /*Media*/
+    @media (max-width: 1080px)
+    {
+        .fondo {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 250px;
+        top: 40px;
+        left: 0;
+        
+    }
+        .PersonaUno {
+            position: absolute;
+            z-index: 90;
+            width: auto;
+            max-height: 250px;
+            /*Posicion*/
+            position: absolute;
+            top: 25%;
+            left: 45%;      
+            transform: translate(-50%, -50%);
+            
+            
+        }}
+</style>
