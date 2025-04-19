@@ -50,23 +50,72 @@
         max-height: 45px;
         min-height: 25px;
     }
+/*Navbar*/
     .navbar {
         /*Margin, padding, sizing*/
         /*Styles*/
         display: flex;
-        gap: 2rem;
+        text-align: center;
+        
+    }
+    .navbar ul {
+        padding-left: 0;
     }
     .navbar li {
-        /*Margin, padding, sizing*/
-        margin: 0;
         /*Styles*/
         display: flex;
-        align-items: first baseline;
+        justify-content: center;
+        
+    }
+    .navbar a {
+        padding: 0 0;
+        margin: 0px 15px;
+        transition: all .5s ease;
+
     }
     .navbar a:hover {
         /*Styles*/
-        background-color: #008cff1a;
+        background-color: #d0ff0079;
         text-decoration: none;
+    }
+    /*Menu Icon*/
+    .hamburger  {
+       display: none;
+       align-items: center;
+       cursor: pointer;
+       z-index: 1001;
+       
+    }
+    @media (max-width: 1280px) {
+        header {
+            padding: 14px 2%;
+            transition: .2s;
+        }
+       .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+       }
+    }
+    @media (max-width: 1080px) {
+        .hamburger {
+            display: flex;
+            position: absolute;
+            padding-top: 15px;
+            left: 70%;
+            
+        }
+        .navbar {
+            position: absolute;
+            top: 100%;
+            right: 2%;
+            width: 270%;
+            height: 29vh;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-radius: 10px;
+        }
     }
 </style>
 <script></script>
