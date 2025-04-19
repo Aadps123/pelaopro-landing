@@ -11,8 +11,19 @@
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Bush_Right.png" alt="BR" class="Bush_Right" loading="eager">
             <!-- Persona Left -->
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Left.png" alt="PL" class="Persona_Left" loading="eager">
+            <!-- Add-ons -->
+               <!-- Colibrí -->
+               <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Animal_1.png" alt="A1" class="Colibri" loading="eager">
+                <!--Flores -->
+                <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Flower_Yellow.png" alt="Ye" class="FYellow" loading="eager">
+                <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Flower_White.png" alt="Wh" class="FWhite" loading="eager">
+                <!-- Flore head -->
+                <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Flower_Red.png" alt="Ro" class="FRed" loading="eager">
+            <!--Photos -->
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Hero_1.png" alt="PH1" class="Photo1" loading="eager">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Hero_2.png" alt="PH2" class="Photo2" loading="eager">
 
-        </div>
+            </div>
         <div class="HeroBack">
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo" loading="eager">
         </div>
@@ -63,7 +74,7 @@
             height: 504px ;
             /*posicion*/
             position: absolute;
-            z-index: 88;
+            z-index: 89;
             /*Mov*/
             left: 50%;
             top: 15%;
@@ -79,6 +90,50 @@
             top: 18%;
             left: 25%;
         }
+    /*Add-ons*/
+        /*Colibrí*/
+        .Colibri {
+            /*Size*/
+            width: auto;
+            height: 130px;
+            /*Posicion*/
+            z-index: 88;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            transition: all 0.5s ease;
+        }
+        /*Flores*/
+        .FYellow {
+            z-index: 88;
+            /*Posicion*/
+            position: absolute;
+            top: 55%;
+            left: 30%;
+            /*Size*/
+            width: auto;
+            height: 70px ;
+        }
+        .FWhite {
+            z-index: 88;
+            /*Posicion*/
+            position: absolute;
+            top: 44%;
+            left: 65%;
+            /*Size*/
+            width: auto;
+            height: 70px ;
+        }
+        .FRed {
+            z-index: 91;
+            /*Size*/
+            width: auto;
+            height: 70px;
+            /*Mov*/
+            position: absolute;
+            top: 12%;
+            left: 47%;
+        }	
     /*Arbustos*/
         .Bush_Left {
             /*Size*/
@@ -101,8 +156,28 @@
             top: 33%;
             left: 53%;
             transition: all 0.5s ease;
-
-
+        }
+    /*Photos*/
+        .Photo1 {
+            z-index: 85;
+            /*Size*/
+            width: auto;
+            height: 250px;
+            /*Posicion*/
+            rotate: -10deg;
+            position: absolute;
+            top: 25%;
+            left: 15%;
+        }
+        .Photo2 {
+            z-index: 85;
+            /*Size*/
+            width: auto;
+            height: 350px;
+            /*Posicion*/
+            rotate: 10deg;
+            position: absolute;
+            left: 62%;
         }
     /*celulares*/
     @media (max-width: 1080px) {
@@ -126,6 +201,8 @@
             height: 200px;
             /*Posicion*/
             top: 15%;
+            transition: all 0.5s ease;
+
         }
         .Persona_Left {
             /*Size*/
@@ -134,6 +211,49 @@
             position: absolute;
             top : 18%;
             left: -3%;
+            transition: all 0.5s ease;
+        }
+        /*Add-ons*/
+        .Colibri {
+            display: none;
+            transition: all 0.5s ease;
+        }
+        /*Flores*/
+        .FYellow {
+            display: none;
+            transition: all 0.5s ease;
+        }
+        .FWhite {
+            display: none;
+        }
+        .FRed {
+            /*Size*/
+            width: auto;
+            height: 50px;
+            /*Mov*/
+            position: absolute;
+            top: 9%;
+            left: 47%;
+        }
+        /*Photos*/
+        .Photo1	{
+            /*Size*/
+            height: 120px;
+            /*posicion*/
+            top: 13%;
+            left: 1%;
+            transition: all 0.5s ease;
+
+        }
+        .Photo2 {
+            /*Size*/
+            height: 160px;
+            /*position*/
+            z-index: 91;
+            rotate: -10deg;
+            top: 30%;
+            left: 40%;
+            transition: all 0.5s ease;
         }
         /*Arbusto*/
         .Bush_Left {
@@ -175,19 +295,57 @@
             /*Posicion*/
             position: absolute;
             top: 18%;
-            left: 8%;
+            left: 15%;
+            transform: translate(-8%, -5%);
+        }
+        /*Add-ons*/
+        .Colibri {
+            /*Size*/
+            display: none;
+        }
+         /*Flores*/
+         .FYellow {
+            display: none;
+        }
+        .FWhite {
+            display: none;
+        }
+        .FRed {
+            top: 7%;
+        }
+        /*Photos*/
+        .Photo1 {
+            /*Size*/
+            height: 200px;
+            /*posicion*/
+            top: 14%;
+            left: 14%;
+            transition: all 0.5s ease;
+        }
+        .Photo2 {
+            /*Size*/
+            height: 200px;
+            /*position*/
+            z-index: 85;
+            rotate: 10deg;
+            top: 15%;
+            left: 58%;
+            transition: all 0.5s ease;
         }
         /*Arbusto*/
         .Bush_Left {
             display: none;
             transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
         }
         .Bush_Right {
-            /*Size*/
-            height: auto;
-            width: 400px;
-            /*Posicion*/
-            top: 22.5%;
+            display: flex;
+            /*posicion*/
+            top: 20%;
+            left: 40%;
+            transition: all 0.5s ease;
+
         }
 }
 /*Laptops*/
