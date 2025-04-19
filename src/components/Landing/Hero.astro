@@ -1,8 +1,12 @@
 <div class="hero">
     <div class="heroImgs">
         <div class="heroMainImgs">
-            <!-- Persona 1 -->
+            <!-- Persona Mid -->
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="P1" class="PersonaUno">
+            <!-- Persona Right -->
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Right.png" alt="P2" class="PersonaDos">
+            <!--Arbusto 1 -->
+            
         </div>
         <div class="HeroBack">
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo">
@@ -33,24 +37,33 @@
         max-height: 854px;
         
         /*posicion*/
-        position: absolute;
+        position: fixed;
         top:40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     /*Personas*/
-        /*Persona 1*/
+        /*Persona Mid*/
         .PersonaUno {
             /*Size*/
-            max-height: 800px;
+            max-height: 630px;
             /*Posicion*/
             position: absolute;
             z-index: 90;
             top: 10%;
             left: 45%;      
-            transform: translate(-45%, -10%);
-            
-            
+            transform: translate(-45%, -10%); 
+        }
+        /*Persona  Right*/
+        .PersonaDos {
+            /*Size*/
+            height: 504px ;
+            /*posicion*/
+            position: absolute;
+            z-index: 89;
+            /*Mov*/
+            left: 50%;
+            top: 15%;
         }
     /*Media*/
     @media (max-width: 1080px) {
@@ -59,16 +72,22 @@
             /*Posicion*/
             top: 25%;
             height: 250px;
+            width: 100%;
         }
         .PersonaUno {
             /*Size*/
-            height: 280px;
+            height: 350px;
             /*Posicion*/
             left: 40%;
             top: 5%;
             transform: translate(-45%, -5%);
-        
-    }
+        }
+        .PersonaDos {
+            /*Size*/
+            height: 220px;
+            /*Posicion*/
+            
+        }
 }
     /*Tablets*/
      @media (min-width: 600px) and (max-width: 1024px) {
@@ -76,14 +95,24 @@
             /*Posicion*/
             top: 20%;
             height: 450px;
+            width: 100%;
         }
- .PersonaUno {
+        /*Personas*/
+        .PersonaUno {
             /*Size*/
             height: 480px;
             /*Posicion*/
             left: 43%;
             top: 3%;
             transform: translate(-45%, -5%);
- }
+        }
+        .PersonaDos {
+            /*Size*/
+            height: 400px;
+            /*Posicion*/
+           
+
+            
+        }
 }
 </style>
