@@ -6,12 +6,13 @@
 <!--Logo -->
     <a href="https://pelaopro.vercel.app/" class="logo"><img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Logo_Black.png" alt="Logo" loading="lazy"></a>
     <!-- Navbar links -->
-    <ul class="navbar">
+    <ul class="navbar" id="navbar">
            <li><a href="/nosotros">Nosotros</a></li>
            <li><a href="/replicabilidad">Replicabilidad</a></li>
            <li><a href="/chatbot">Chatbot</a></li>
            <li><a href="/faqs">FAQ's</a></li>
            <li><a href="/apoyanos">Apóyanos</a></li>
+            <li><a href="#" class="x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></a></li>
     </ul>
     <!-- Menu Icon -->
     <div class="hamburger" id="menu-icon">
@@ -55,11 +56,12 @@
         /*Styles*/
         display: flex;
         text-align: center;
+        padding-left: 0;
+        margin-left: 25px;
+        gap: 20px;
         
     }
-    ul .navbar {
-       padding-left: 0;
-    }
+  
     .navbar li {
         /*Styles*/
         display: flex;
@@ -70,12 +72,19 @@
         padding: 0 0;
         margin: 0px 15px;
         transition: all .5s ease;
-
+        padding-left: 0;
+        margin-left: 0;
     }
     .navbar a:hover {
         /*Styles*/
         background-color: #d0ff0079;
+        box-sahdow: 0 0 0 20px #066400
         text-decoration: none;
+    }
+    .x {
+        display: none;
+       align-items: center;
+       cursor: pointer;
     }
     /*Menu Icon*/
     .hamburger  {
@@ -95,6 +104,9 @@
         padding: 5px 0;
         margin: 0px 20px;
        }
+       .x {
+        display: none;
+    }
     }
     @media (max-width: 1080px) {
         header {
@@ -115,9 +127,11 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            padding-top: 10px;
+            padding-top: 20px;
             padding-bottom: 10px;
-            gap: 5px;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
             /* Translate*/
             align-items: center;
             margin-left: auto;
@@ -125,21 +139,67 @@
             margin-right: 17%;
             /*Size*/
             width: 140px;
-            height: 2ovh;
-            background-color: transparent;
+            height: 45vh;
             border-radius: 10px;
             /*transition*/
             transition: all 0.5s ease;  
             /*Styles*/
-            background-color: rgba(0, 0, 0, 0.178);
-            color: white;
+            background-color: white;
+            
+            /* Ocultar navbar por defecto */
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-20px);
         }
+        
+        /* Mostrar navbar cuando está activo */
+        .navbar.active {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+        
+        .navbar li {
+            width: 100%;
+        }
+        
         .navbar ul {
             color: white;
             margin: 0px 0px;
-            justify-content: flex-start;
+            padding-left: 0;
+        }
+        
+        .x {
+            display: block;
+            align-items: center;
+        }
+        
+        /* Estilo para el botón X cuando está activo */
+        .x.active {
+            display: block;
         }
     }
-
 </style>
-<script></script>
+<script>
+    // Esperar a que el DOM esté completamente cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.getElementById("menu-icon");
+        const navbar = document.getElementById("navbar");
+        const x = document.querySelector(".x");
+        
+        // Comprobar si los elementos existen antes de añadir eventos
+        if (menuIcon && navbar) {
+            menuIcon.addEventListener("click", () => {
+                navbar.classList.toggle("active");
+            });
+        }
+        
+        // Cerrar el menú cuando se hace clic en la X
+        if (x && navbar) {
+            x.addEventListener("click", (e) => {
+                e.preventDefault();
+                navbar.classList.remove("active");
+            });
+        }
+    });
+</script>
