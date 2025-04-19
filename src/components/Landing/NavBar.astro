@@ -138,12 +138,13 @@
             margin-right: 17%;
             /*Size*/
             width: 140px;
-            height: 35.5vh;
+            height: auto;
             border-radius: 10px;
             /*transition*/
             transition: all 0.5s ease;  
             /*Styles*/
             background-color: white;
+            box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.123);
             
             /* Ocultar navbar por defecto */
             opacity: 0;
@@ -178,6 +179,15 @@
             display: block;
         }
     }
+    /*Tablets*/
+    @media (min-width: 600px) and (max-width: 1024px) {
+        .logo img {
+            height: 50px;
+        }
+        .hamburger {
+            font-size: 50px;
+        }
+    } 
 </style>
 <script>
     // Esperar a que el DOM esté completamente cargado

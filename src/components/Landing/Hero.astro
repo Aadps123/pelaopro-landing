@@ -53,13 +53,34 @@
             
         }
     /*Media*/
-    @media (max-width: 1080px)
-    {
+    @media (max-width: 1080px) {
+        /*Fondo*/
+        .fondo {
+            /*Posicion*/
+            top: 30%;
+        }
         .PersonaUno {
             /*Size*/
-            width: 100px;
-            max-width: 590px;
+            height: 280px;
+            /*Posicion*/
+            left: 40%;
+            top: 5%;
+            transform: translate(-45%, -5%);
         
     }
-       
+}
+    /*Tablets*/
+     @media (min-width: 600px) and (max-width: 1024px) {
+        .fondo {
+            /*Posicion*/
+            top: 20%;
+            height: 450px;
+        }
+}   .PersonaUno {
+            /*Size*/
+            height: 480px;
+            /*Posicion*/
+            left: 43%;
+            top: 3%;
+            transform: translate(-45%, -5%);
 </style>
