@@ -2,14 +2,14 @@
     <div class="heroImgs">
         <div class="heroMainImgs">
             <!-- Persona Mid -->
-            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="P1" class="PersonaUno">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="P1" class="PersonaUno" loading="eager">
             <!-- Persona Right -->
-            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Right.png" alt="P2" class="PersonaDos">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Right.png" alt="P2" class="PersonaDos" loading="eager">
             <!--Arbusto 1 -->
-            
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Bush_Left.png" alt="BL" class="Bush_Left" loading="eager">
         </div>
         <div class="HeroBack">
-            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo" loading="eager">
         </div>
     </div>
     <div class="heroText">
@@ -60,10 +60,21 @@
             height: 504px ;
             /*posicion*/
             position: absolute;
-            z-index: 89;
+            z-index: 88;
             /*Mov*/
             left: 50%;
             top: 15%;
+        }
+        /*Arbusto*/
+        .Bush_Left {
+            /*Size*/
+            width: 1100px;
+            height: auto;
+            /*Posicion*/
+            z-index: 87;
+            position: absolute;
+            top: 40%;
+            left: 15%;
         }
     /*Media*/
     @media (max-width: 1080px) {
@@ -84,9 +95,18 @@
         }
         .PersonaDos {
             /*Size*/
-            height: 220px;
+            height: 200px;
+        }
+        /*Arbusto*/
+        .Bush_Left {
+            /*Size*/
+            width: 300px;
+            height: 200px;
             /*Posicion*/
-            
+            z-index: 87;
+            position: absolute;
+            top: 23%;
+            left: 3%;
         }
 }
     /*Tablets*/
@@ -110,9 +130,10 @@
             /*Size*/
             height: 400px;
             /*Posicion*/
-           
-
-            
+        }
+        /*Arbusto*/
+        .Bush_Left {
+            he
         }
 }
 </style>
