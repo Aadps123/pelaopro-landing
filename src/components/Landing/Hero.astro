@@ -27,52 +27,39 @@
     }
     /*Fondo Azul*/
     .fondo {
-        position: absolute;
         z-index: 1;
         width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
+        max-height: 554px;
+        min-height: 254px ;
+        /*posicion*/
+        position: absolute;
+        top:40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     /*Personas*/
         /*Persona 1*/
         .PersonaUno {
-            position: absolute;
-            z-index: 90;
-            width: auto;
-            max-height: 754px;
+            /*Size*/
+            max-height: 650px;
+            min-height: 104px;
             /*Posicion*/
             position: absolute;
-            top: 40%;
+            z-index: 90;
+            top: 10%;
             left: 45%;      
-            transform: translate(-45%, -50%);
+            transform: translate(-45%, -10%);
             
             
         }
     /*Media*/
     @media (max-width: 1080px)
     {
-        .fondo {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 250px;
-        top: 40px;
-        left: 0;
+        .PersonaUno {
+            /*Size*/
+            width: 100px;
+            max-width: 590px;
         
     }
-        .PersonaUno {
-            position: absolute;
-            z-index: 90;
-            width: auto;
-            max-height: 250px;
-            /*Posicion*/
-            position: absolute;
-            top: 25%;
-            left: 45%;      
-            transform: translate(-50%, -50%);
-            
-            
-        }}
+       
 </style>
