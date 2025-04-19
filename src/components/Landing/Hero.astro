@@ -2,11 +2,16 @@
     <div class="heroImgs">
         <div class="heroMainImgs">
             <!-- Persona Mid -->
-            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="P1" class="PersonaUno" loading="eager">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Mid.png" alt="PU" class="PersonaUno" loading="eager">
             <!-- Persona Right -->
-            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Right.png" alt="P2" class="PersonaDos" loading="eager">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Right.png" alt="PD" class="PersonaDos" loading="eager">
             <!--Arbusto 1 -->
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Bush_Left.png" alt="BL" class="Bush_Left" loading="eager">
+            <!-- Arbusto 2 -->
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Bush_Right.png" alt="BR" class="Bush_Right" loading="eager">
+            <!-- Persona Left -->
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/P_Left.png" alt="PL" class="Persona_Left" loading="eager">
+
         </div>
         <div class="HeroBack">
             <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo" loading="eager">
@@ -27,9 +32,7 @@
 
     /*Hero*/
     /*Fondo*/
-    .HeroBack {
-        z-index: 1;
-    }
+   
     /*Fondo Azul*/
     .fondo {
         z-index: 1;
@@ -37,7 +40,7 @@
         max-height: 854px;
         
         /*posicion*/
-        position: fixed;
+        position: absolute;
         top:40%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -65,7 +68,18 @@
             left: 50%;
             top: 15%;
         }
-        /*Arbusto*/
+        /*Persona Left*/
+        .Persona_Left {
+            z-index: 86;
+            /*Size*/
+            height: 400px;
+            width: auto;
+            /*Posicion*/
+            position: absolute;
+            top: 18%;
+            left: 25%;
+        }
+    /*Arbustos*/
         .Bush_Left {
             /*Size*/
             width: 1100px;
@@ -75,8 +89,22 @@
             position: absolute;
             top: 40%;
             left: 15%;
+            display: flex;
+            transition: all 0.5s ease;
         }
-    /*Media*/
+        .Bush_Right {
+            z-index: 86;
+            /*Size*/
+            width: 503px;
+            /*Posicion*/
+            position: absolute;
+            top: 33%;
+            left: 53%;
+            transition: all 0.5s ease;
+
+
+        }
+    /*celulares*/
     @media (max-width: 1080px) {
         /*Fondo*/
         .fondo {
@@ -96,17 +124,25 @@
         .PersonaDos {
             /*Size*/
             height: 200px;
+            /*Posicion*/
+            top: 15%;
+        }
+        .Persona_Left {
+            /*Size*/
+            height: 200px;
+            /*Posicion*/
+            position: absolute;
+            top : 18%;
+            left: -3%;
         }
         /*Arbusto*/
         .Bush_Left {
-            /*Size*/
-            width: 300px;
-            height: 200px;
-            /*Posicion*/
-            z-index: 87;
-            position: absolute;
-            top: 23%;
-            left: 3%;
+            display: none;
+            transition: all 0.5s ease;
+        }
+        .Bush_Right {
+            display: none;
+            transition: all 0.5s ease;
         }
 }
     /*Tablets*/
@@ -120,7 +156,7 @@
         /*Personas*/
         .PersonaUno {
             /*Size*/
-            height: 480px;
+            height: 580px;
             /*Posicion*/
             left: 43%;
             top: 3%;
@@ -130,10 +166,66 @@
             /*Size*/
             height: 400px;
             /*Posicion*/
+            top: 13%;
+            left: 48%;
+        }
+        .Persona_Left {
+            /*Size*/
+            height: 300px;
+            /*Posicion*/
+            position: absolute;
+            top: 18%;
+            left: 8%;
         }
         /*Arbusto*/
         .Bush_Left {
-            he
+            display: none;
+            transition: all 0.5s ease;
+        }
+        .Bush_Right {
+            /*Size*/
+            height: auto;
+            width: 400px;
+            /*Posicion*/
+            top: 22.5%;
         }
 }
+/*Laptops*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /*Personas*/
+    .PersonaUno {
+        /*Size*/
+        height: 520px;        
+    }
+    .PersonaDos {
+        /*Size*/
+        height: 400px;
+        /*Posicion*/
+        top: 20%;
+    }
+    .Persona_Left {
+        left: 25%;
+        top: 20%;
+        height: 300px;
+    }
+    /*Arbustos*/
+    .Bush_Left {
+        /*Size*/
+        width: 800px;
+        height: auto;
+        /*Posicion*/
+        top: 40%;
+        left: 13%;
+        display: flex;
+        transition: all 0.5s ease;
+    }
+    .Bush_Right {
+        /*Size*/
+        width: 503px;
+        /*Posicion*/
+        top: 33%;
+        left: 48%;
+    }
+}
+
 </style>
