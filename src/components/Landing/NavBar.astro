@@ -18,7 +18,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
     </div>
 </header>
-
 <style>
     * {
         /*Overall*/
@@ -58,8 +57,8 @@
         text-align: center;
         
     }
-    .navbar ul {
-        padding-left: 0;
+    ul .navbar {
+       padding-left: 0;
     }
     .navbar li {
         /*Styles*/
@@ -91,31 +90,56 @@
             padding: 14px 2%;
             transition: .2s;
         }
+       
        .navbar a {
         padding: 5px 0;
         margin: 0px 20px;
        }
     }
     @media (max-width: 1080px) {
+        header {
+            margin-left: 5%;
+        }
+        .logo img {
+            position: fixed;
+        }
         .hamburger {
-            display: flex;
-            position: absolute;
+            display: block;
             padding-top: 15px;
-            left: 70%;
-            
+            position: absolute;
+            left: 80%;
+            transform: translateX(-80%);
         }
         .navbar {
-            position: absolute;
-            top: 100%;
-            right: 2%;
-            width: 270%;
-            height: 29vh;
-            background-color: transparent;
+            /*Position, Margin, Padding */
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            gap: 5px;
+            /* Translate*/
+            align-items: center;
+            margin-left: auto;
+            margin-top: 50px;
+            margin-right: 17%;
+            /*Size*/
+            width: 140px;
+            height: 2ovh;
+            background-color: transparent;
             border-radius: 10px;
+            /*transition*/
+            transition: all 0.5s ease;  
+            /*Styles*/
+            background-color: rgba(0, 0, 0, 0.178);
+            color: white;
+        }
+        .navbar ul {
+            color: white;
+            margin: 0px 0px;
+            justify-content: flex-start;
         }
     }
+
 </style>
 <script></script>
