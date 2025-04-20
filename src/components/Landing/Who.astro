@@ -62,25 +62,27 @@ import Downarrow from './Downarrow.astro';
     
     /*Normal*/
     .Counter {
-        width: 556px;
-        height: 239px;
+        width: auto;
+        height: 270px;
         z-index: 90;
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 50%;
-        transform: translateX(-15%);
+        transform: translateX(-50%);
+        transition: all 0.5s ease;
     }
     
     /*Nubes*/
     .Cloud_One {
         z-index: 91;
         position: absolute;
-        top: 50%;
-        left: 15%;
+        top: 65%;
+        left: 20%;
         width: auto;
         height: 350px;
         transform: translateY(-50%);
         rotate: -1deg;
+        transition: all 0.5s ease;
     }
     
     .Cloud_Two {
@@ -88,9 +90,11 @@ import Downarrow from './Downarrow.astro';
         height: 275px;
         z-index: 89;
         position: absolute;
-        top: 30%;
-        left: 25%;
+        top: 10%;
+        left: 52%;
         rotate: -5deg;
+        transition: all 0.5s ease;
+
     }
     
     /*Add-ons*/
@@ -99,8 +103,10 @@ import Downarrow from './Downarrow.astro';
         height: 100px;
         z-index: 90;
         position: absolute;
-        top: 70%;
-        left: 15%;
+        top: 60%;
+        left: 61%;
+        transition: all 0.5s ease;
+
     }
     
     /*Photos*/
@@ -109,9 +115,11 @@ import Downarrow from './Downarrow.astro';
         height: 250px;
         z-index: 89;
         position: absolute;
-        top: 40%;
-        left: 10%;
+        top: 30%;
+        left: 16%;
         rotate: 10deg;
+        transition: all 0.5s ease;
+
     }
     
     .PhTwo {
@@ -119,9 +127,11 @@ import Downarrow from './Downarrow.astro';
         height: 300px;
         z-index: 88;
         position: absolute;
-        top: 30%;
-        right: 10%;
+        top: 40%;
+        right: 15%;
         rotate: 11deg;
+        transition: all 0.5s ease;
+
     }
     
     .fondo {
@@ -132,6 +142,8 @@ import Downarrow from './Downarrow.astro';
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        transition: all 0.5s ease;
+
     }
     
     /*Pregunta*/
@@ -141,9 +153,11 @@ import Downarrow from './Downarrow.astro';
         opacity: 80%;
         z-index: 90;
         position: absolute;
-        top: 15%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%);
+        transition: all 0.5s ease;
+
     }
     
     .Emoji {
@@ -152,11 +166,14 @@ import Downarrow from './Downarrow.astro';
         rotate: 20deg;
         z-index: 90;
         position: absolute;
-        top: 15%;
+        top: 83%;
         left: 60%;
+        transition: all 0.5s ease;
+
     }
     
     .parrafo {
+        transform:translateY(20%) ;        
         width: 60%;
         max-width: 700px;
         text-align: center;
@@ -164,10 +181,13 @@ import Downarrow from './Downarrow.astro';
         font-family: Caveat;
         margin: 0 auto;
         padding: 20px;
+        transition: all 0.5s ease;
+
     }
     
     /*Boton*/
     .button {
+        transform:translateY(25%) ;        
         display: block;
         width: fit-content;
         margin: 20px auto;
@@ -185,7 +205,7 @@ import Downarrow from './Downarrow.astro';
     }
     
     .button:hover {
-        transform: translateY(-3px);
+        transform: translateY(-1px);
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 12px 18px rgba(0, 0, 0, 0.3);
     }
     
@@ -197,7 +217,7 @@ import Downarrow from './Downarrow.astro';
     /*Celular*/
     @media (max-width: 1080px) {
         .FrameTwo_Main {
-            min-height: 550px;
+            height: 780px;
         }
         
         .FrameTwoImgs {
@@ -211,22 +231,22 @@ import Downarrow from './Downarrow.astro';
         
         .Counter {
             width: auto;
-            height: 150px;
+            height: 130px;
             top: 15%;
             left: 50%;
             transform: translateX(-50%);
         }
         
         .Cloud_One {
-            height: 150px;
+            height: 100px;
             top: 40%;
-            left: 20%;
+            left: -2%;
         }
         
         .Cloud_Two {
             height: 100px;
-            top: 20%;
-            left: 40%;
+            top: 5%;
+            left: 60%;
         }
         
         .FWhite {
@@ -234,24 +254,26 @@ import Downarrow from './Downarrow.astro';
         }
         
         .PhOne {
-            height: 120px;
-            top: 50%;
-            left: 20%;
+            display: none;
         }
         
         .PhTwo {
-            display: none;
+            z-index: 91;
+            height: 130px;
+            rotate: -20deg;
+            top: 30%;
+            left: 50%;
         }
         
         .Pregunta {
             height: 40px;
-            top: 10%;
+            top: 60%;
         }
         
         .Emoji {
             height: 40px;
-            top: 10%;
-            left: 65%;
+            top: 60%;
+            left: 75%;
             rotate: 0deg;
         }
         
@@ -260,12 +282,14 @@ import Downarrow from './Downarrow.astro';
         }
         
         .parrafo {
+            transform: translateY(-35%);
             width: 80%;
             font-size: 24px;
         }
         
         .button {
             padding: 15px 40px;
+            transform: translateY(-180%)
         }
     }
 
@@ -277,45 +301,84 @@ import Downarrow from './Downarrow.astro';
         
         .Counter {
             width: auto;
-            height: 200px;
+            height: 260px;
             top: 15%;
         }
-        
+        .Cloud_One {
+            height: 220px;
+            top: 60%;
+            left: 10%;
+        }
+        .Cloud_Two {
+            top: 0%;
+            left: 50%;
+            height: 200px;
+        }
         .PhOne {
-            height: 180px;
-            top: 40%;
-            left: 15%;
+            display: none;
         }
         
         .PhTwo {
-            height: 220px;
-            top: 35%;
-            right: 15%;
+            display: none;
         }
-        
+        .Pregunta {
+            top: 85%;
+            height: 60px;
+        }
         .parrafo {
             width: 70%;
             font-size: 28px;
+        }
+        .Emoji {
+            height: 70px;
+            top: 80%;
+            left: 65%;
         }
     }
 
     /*Laptop*/
     @media (min-width: 1025px) and (max-width: 1440px) {
+        .fondo {
+            top: 200px;
+        }
         .Counter {
-            left: 45%;
+            top:15%;
+
         }
         
         .Cloud_One {
-            left: 20%;
+            top: 50%;
+            left: 10%;
         }
         
         .Cloud_Two {
-            left: 30%;
+            left: 50%;
+            top: 0%;
         }
         
         .FWhite {
             left: 65%;
-            top: 60%;
+            top: 50%;
+        }
+        .PhOne {
+            top: 30%;
+            left: 10%; 
+            height:  150px;
+        }
+        .PhTwo {
+            top: 40%;
+            left: 70%;
+            height:  250px;
+        }
+        .Pregunta {
+            top: 75%;
+        }
+        .Emoji {
+            top: 75%;
+            left: 63%;
+        }
+        .parrafo {
+            transform: translateY(5%);
         }
     }
 </style>
