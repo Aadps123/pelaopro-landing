@@ -4,13 +4,13 @@ import Downarrow from './Downarrow.astro';
 <div class="FrameTwo_Main">
     <div class="FrameTwoImgs">
         <!-- Contador -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Contador.webp.png" alt="Counter" class="Counter" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Contador.webp.png" alt="Counter" class="Counter" loading="eager">
         <!-- Nube 1 -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_1.png" alt="C1" class="Cloud_One" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_1.png" alt="C1" class="Cloud_One" loading="eager">
         <!-- Nube 2 -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_2.png" alt="C2" class="Cloud_Two" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_2.png" alt="C2" class="Cloud_Two" loading="eager">
         <!-- Flor Blanca -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Flower_White.png" alt="Wh" class="FWhite" loading="lazy">        
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Flower_White.png" alt="Wh" class="FWhite" loading="eager">        
         <!--Photo 1 -->
         <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame2_1.png" alt="P1" class="PhOne" loading="lazy">
         <!-- Photo 2 -->
@@ -18,7 +18,7 @@ import Downarrow from './Downarrow.astro';
         <!-- Fondo -->
         <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Background.png" alt="Fondo" class="fondo" loading="eager">
         <!-- Pregunta -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/pregunta.png" alt="P1" class="Pregunta" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/pregunta.png" alt="P1" class="Pregunta" loading="eager">
         <!-- Emoji -->
         <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Thinking.png" alt="" class="Emoji" loading="lazy">
         <p class="parrafo">Pelao’Pro es un programa piloto que acompaña a los jóvenes en su camino hacia un futuro con más oportunidades, brindándoles herramientas para tomar decisiones informadas y acceder a las mejores opciones.</p>
@@ -30,6 +30,7 @@ import Downarrow from './Downarrow.astro';
 <style>
     .FrameTwo_Main {
         height: 850px;
+        
     }
     
     /*Normal*/
@@ -178,67 +179,89 @@ import Downarrow from './Downarrow.astro';
     @media (max-width: 1080px) {
     
     .fondo {
-            top:125%;
+        /*Posicion*/
+            top:100%;
             left: 50%;
             transform: translate(-50%, -50%);
+            /*Size*/
             width: 100%;
-            height: 250px;
+            height: 450px
         }
         .Counter {
-            left: 20%;
+            /*Posicion*/
+            left: 10%;
             transform: translate(0, 60%);
-            height: 100PX ;
+            /*Size*/
+            height: 150PX ;
             width: auto;
+            transition: all 0.5s ease;  
         }
         .Cloud_One {
-            left: 5%;
+            left: -2%;
             transform: translate(0, -10%);
             width: auto;
-            height: 100px;
-
+            height: 150px;
+            transition: all 0.5s ease;  
         }
         .Cloud_Two {
             height: 200px;
-            left: 18%;
-            transform: translateY(-90%);
+            left: 14%;
+            transform: translateY(-140%);
             width: auto;
             height: 100px;
-
+            transition: all 0.5s ease;  
         }
         .FWhite {
             left: -7%;
-            transform: translateY(-40%);
+            transform: translateY(-100%);
             width: auto;
             height: 50px;
-
+            transition: all 0.5s ease;  
         }
         .PhOne {
             left: 20%;
-            transform: translateY(-220%);
+            transform: translateY(-240%);
             width: auto;
-            height: 80px;
+            height: 120px;
             rotate: -10deg;
+            transition: all 0.5s ease;  
         }
         .PhTwo {
-            left: 23%;
-            transform: translateY(-160%);
-            width: auto;
-            height: 80px;
-            rotate: 30deg;
+            display: none;
+            transition: all 0.5s ease;  
         }
         .Pregunta {
-            display: none;
+            /*Size*/
+            height: 40px;
+            left: -13%;
+            transition: all 0.5s ease; 
+            transform: translatey(-12vh); 
         }
         .parrafo {
-            display: none;
+            /*Size*/
+            width: 78%;
+            /*Style*/
+            font-size: 25px;
+            /*Posición*/
+            transform: translateY(-11vh);
         }
         .Emoji {
-            display: none;
+            /*Size*/
+            width: auto;
+            height: 40px;
+            /*Posicion*/
+            left: -11vh;
+           transform: translateY(-12vh);
         }
         .button {
-            display: none;
+            left: 13vh;
         }
+        .FrameTwo_Main {
+        height: 700px;
+        
     }
+    }
+
     /*Tablet*/
     @media (min-width: 600px) and (max-width: 1024px) {
     }
