@@ -4,14 +4,14 @@ import Downarrow from "./Downarrow.astro";
 <div class="FrameThree">
     <div class="FrameThreeImgs">
          <!-- .festEmoji -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Fest.png" alt="Emoji" class="festEmoji" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Fest.png" alt="Emoji" class="festEmoji" loading="eager">
         <!-- .middleImg -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Middle.png" alt="Middle" class="middleImg" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Middle.png" alt="Middle" class="middleImg" loading="eager">
         <!-- .leftImg -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Phot_Frame3_Left.png" alt="left" class="leftImg" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Phot_Frame3_Left.png" alt="left" class="leftImg" loading="eager">
         <!-- .rightImg -->
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Right.png" alt="right" class="rightImg" loading="lazy">
-        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Butterfly_White.png" alt="Butterfly" class="WhButterfly" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Right.png" alt="right" class="rightImg" loading="eager">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Butterfly_White.png" alt="Butterfly" class="WhButterfly" loading="eager">
         <a href="/nosotros" class="button">Ver más</a>
     </div>
 </div>
@@ -44,24 +44,27 @@ import Downarrow from "./Downarrow.astro";
     .middleImg {
         /*Size*/
         width: auto;
-        height: 763px;
+        height: 650px;
         /*posicion*/
         z-index: 10;
         position: relative;
         left: 43.5%;
         top:50%;
         transform: translate(-50% ,-60%);
+        transition: all 0.5s ease;
     }
     .leftImg {
         /*Size*/
         width: auto;
-        height: 500px;
+        height: 400px;
         rotate:-20deg;
         /*posicion*/
         position: relative;
         z-index: 9;
-        left: -42%;
-        top: -16%;
+        left: -32%;
+        top: -5%;
+        transition: all 0.5s ease;
+
     }
     .rightImg {
          /*Size*/
@@ -71,8 +74,10 @@ import Downarrow from "./Downarrow.astro";
         position: relative;
         rotate: 20deg;
         z-index: 9;
-        left: 60%;
-        top: -64%;
+        left: 58%;
+        top: -54%;
+        transition: all 0.5s ease;
+
     }
     .festEmoji {
         /*Size*/
@@ -82,8 +87,10 @@ import Downarrow from "./Downarrow.astro";
         z-index: 11;
         position: relative;
         rotate: -20deg;
-        top: -10%;
+        top: 0%;
         left: 29%;
+        transition: all 0.5s ease;
+
     }
     .WhButterfly {
         /*Size*/
@@ -92,14 +99,16 @@ import Downarrow from "./Downarrow.astro";
         /*Posicion*/
         z-index: 12;
         position: relative;
-        top: -116%;
+        top: -96%;
         left: 34%;
         rotate: 20deg;
+        transition: all 0.5s ease;
+
 
     }
     /*Boton*/
     .button {
-        top: -570px;        
+        top: -500px;        
         display: block;
         width: fit-content;
         margin: 20px auto;
@@ -127,12 +136,72 @@ import Downarrow from "./Downarrow.astro";
     }
     /*Celulares*/
     @media (max-width: 1080px) {
-
+        .FrameThree { 
+            height: 450px;
+        }
+        .middleImg {
+            height: 300px;
+            position: relative;
+            display: block;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            top: 10%;
+        }
+        .leftImg {
+            height:100px ;
+            z-index: 11;
+            left: 0%;
+            top: -30%;
+        }
+        .rightImg {
+            height: 100px;
+            left: 35%;
+            top: -25%;
+            z-index:11;
+        }
+        .festEmoji {
+            top: 24%;
+            left: 10%;
+            height: 70px;
+        }
+        .button {
+            transform: translateY(190%);
+        }
     }
-    /*Tablet*/
-    @media (min-width: 600px) and (max-width: 1024px) {
-
+   /*Tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    .FrameThree {
+        height: 700px;
+        margin-top: 0%;
+        position: relative;
     }
+    
+    .middleImg {
+        height: 500px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); 
+    }
+    
+    .leftImg {
+        display: none;
+    }
+    
+    .rightImg {
+        display: none;
+    }
+    
+    .festEmoji {
+        height: 120px;
+        transform: translate(20%, 60%);
+    }
+    
+    .button {
+        transform: translateY(200px);
+    }
+}
     /*Laptop*/
     @media (min-width: 1025px) and (max-width: 1440px) {
         .middleImg {
