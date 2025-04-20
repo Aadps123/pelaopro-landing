@@ -180,25 +180,27 @@ import Downarrow from './Downarrow.astro';
     
     .fondo {
         /*Posicion*/
-            top:100%;
+        position: relative;
+            top:-350px;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -10vh);
             /*Size*/
             width: 100%;
             height: 450px
         }
         .Counter {
             /*Posicion*/
-            left: 10%;
-            transform: translate(0, 60%);
+            left: 50%;
+            transform: translate(-50%, 60%);
             /*Size*/
-            height: 150PX ;
+            max-height: 150px;
+            min-height: 60px;
             width: auto;
             transition: all 0.5s ease;  
         }
         .Cloud_One {
             left: -2%;
-            transform: translate(0, -10%);
+            transform: translate(2%, -10%);
             width: auto;
             height: 150px;
             transition: all 0.5s ease;  
@@ -206,17 +208,14 @@ import Downarrow from './Downarrow.astro';
         .Cloud_Two {
             height: 200px;
             left: 14%;
-            transform: translateY(-140%);
+            top: 0%;
+            transform: translate( -20% ,-160%);
             width: auto;
             height: 100px;
             transition: all 0.5s ease;  
         }
         .FWhite {
-            left: -7%;
-            transform: translateY(-100%);
-            width: auto;
-            height: 50px;
-            transition: all 0.5s ease;  
+            display: none;
         }
         .PhOne {
             left: 20%;
@@ -233,9 +232,11 @@ import Downarrow from './Downarrow.astro';
         .Pregunta {
             /*Size*/
             height: 40px;
-            left: -13%;
+            /*posicion*/
+            top: -550px;
+            left:  25%;
             transition: all 0.5s ease; 
-            transform: translatey(-12vh); 
+            transform: translate(-50%,); 
         }
         .parrafo {
             /*Size*/
@@ -243,22 +244,24 @@ import Downarrow from './Downarrow.astro';
             /*Style*/
             font-size: 25px;
             /*Posición*/
-            transform: translateY(-11vh);
+            transform: translateY(-600px);
         }
         .Emoji {
             /*Size*/
             width: auto;
             height: 40px;
             /*Posicion*/
-            left: -11vh;
-           transform: translateY(-12vh);
+            left: 23%;
+           transform: translate(0%,-600px);
+           rotate: 0deg;
         }
         .button {
-            left: 13vh;
+            top: -500px;
+            left: 24%;
+            transform: translateX(-50%¿);
         }
         .FrameTwo_Main {
         height: 700px;
-        
     }
     }
 
