@@ -1,3 +1,10 @@
+---
+import Downarrow from './Downarrow.astro';
+---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 <div class="hero">
     <div class="heroImgs">
         <div class="heroMainImgs">
@@ -29,8 +36,10 @@
         </div>
     </div>
     <div class="heroText">
-        <div class="heroP"></div>
-        <div class="HeroFirma"></div>
+            <p>"El genio se hace con un 1% de talento y un 99% de trabajo duro."</p>
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Graph_Albert.png" alt="Albert" class="FirmaAlbert" loading="eager">
+            <Downarrow></Downarrow>
+        </div>
     </div>
 </div>
 <style>
@@ -42,9 +51,17 @@
     }
 
     /*Hero*/
+    .heroImgs {
+        height: 600px;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+        margin-top: 0px;
+    }
+    .heroMainImgs {
+        height: 600px;
+        margin-top: 0px;
+    }
     /*Fondo*/
-   
-    /*Fondo Azul*/
     .fondo {
         z-index: 1;
         width: 100%;
@@ -65,8 +82,8 @@
             position: absolute;
             z-index: 90;
             top: 10%;
-            left: 45%;      
-            transform: translate(-45%, -10%); 
+            left: 47.5%;      
+            transform: translate(-47.5%, -10%); 
         }
         /*Persona  Right*/
         .PersonaDos {
@@ -76,7 +93,7 @@
             position: absolute;
             z-index: 89;
             /*Mov*/
-            left: 50%;
+            left: 53%;
             top: 15%;
         }
         /*Persona Left*/
@@ -88,7 +105,7 @@
             /*Posicion*/
             position: absolute;
             top: 18%;
-            left: 25%;
+            left: 28%;
         }
     /*Add-ons*/
         /*Colibrí*/
@@ -108,8 +125,8 @@
             z-index: 88;
             /*Posicion*/
             position: absolute;
-            top: 55%;
-            left: 30%;
+            top: 56%;
+            left: 33%;
             /*Size*/
             width: auto;
             height: 70px ;
@@ -119,7 +136,7 @@
             /*Posicion*/
             position: absolute;
             top: 44%;
-            left: 65%;
+            left: 68%;
             /*Size*/
             width: auto;
             height: 70px ;
@@ -132,7 +149,7 @@
             /*Mov*/
             position: absolute;
             top: 12%;
-            left: 47%;
+            left: 49%;
         }	
     /*Arbustos*/
         .Bush_Left {
@@ -154,7 +171,7 @@
             /*Posicion*/
             position: absolute;
             top: 33%;
-            left: 53%;
+            left: 55%;
             transition: all 0.5s ease;
         }
     /*Photos*/
@@ -167,7 +184,7 @@
             rotate: -10deg;
             position: absolute;
             top: 25%;
-            left: 15%;
+            left: 18%;
         }
         .Photo2 {
             z-index: 85;
@@ -178,9 +195,48 @@
             rotate: 10deg;
             position: absolute;
             left: 62%;
+            top: 15%;
+        }
+        /*Texto*/
+        .heroText {
+            /*Posicion*/
+            text-align: center;
+            /*Size*/
+            width: 100%;
+            margin-top: 0px;
+            font-size: 32px;
+             /*Posicion*/
+             z-index: 1;
+            margin: 0 auto; 
+            margin-bottom: 0;ma
+            width: fit-content;
+            /*Size*/
+            width: 30%;
+            /*Style*/
+            font-family: Caveat;
+
+        }
+
+        .FirmaAlbert {
+            /*Size*/
+            margin-top: -10px;
+            padding-top: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-top: 0;
+            z-index: 2;
+            width: auto;
+            height: 65px;
+            /*Posicion*/
+            position: relative;
         }
     /*celulares*/
     @media (max-width: 1080px) {
+        .heroImgs {
+        height: 380px;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+    }
         /*Fondo*/
         .fondo {
             /*Posicion*/
@@ -192,15 +248,16 @@
             /*Size*/
             height: 350px;
             /*Posicion*/
-            left: 40%;
-            top: 5%;
+            left: 43%;
+            top: 2%;
             transform: translate(-45%, -5%);
         }
         .PersonaDos {
             /*Size*/
             height: 200px;
             /*Posicion*/
-            top: 15%;
+            top: 13%;
+            left: 55%;
             transition: all 0.5s ease;
 
         }
@@ -209,7 +266,7 @@
             height: 200px;
             /*Posicion*/
             position: absolute;
-            top : 18%;
+            top : 16%;
             left: -3%;
             transition: all 0.5s ease;
         }
@@ -232,7 +289,7 @@
             height: 50px;
             /*Mov*/
             position: absolute;
-            top: 9%;
+            top: 5%;
             left: 47%;
         }
         /*Photos*/
@@ -240,8 +297,8 @@
             /*Size*/
             height: 120px;
             /*posicion*/
-            top: 13%;
-            left: 1%;
+            top: 11%;
+            left: 3%;
             transition: all 0.5s ease;
 
         }
@@ -264,9 +321,35 @@
             display: none;
             transition: all 0.5s ease;
         }
+
+        /*Texto*/
+            .heroText {
+                /*Posicion*/
+                text-align: center;
+                margin: 0 auto; 
+                width: fit-content;
+                /*Size*/
+                margin-top: 5%;
+                font-size: 28px;
+                width: 73%;
+                /*Style*/
+                font-family: Caveat;   
+            }
+            .FirmaAlbert
+            {
+                /*Size*/
+                height: 45px
+            
+       
 }
     /*Tablets*/
      @media (min-width: 600px) and (max-width: 1024px) {
+        .heroImgs {
+            width: 100%;
+            height: 520px;
+            padding-bottom: 10px;
+            overflow-y: hidden;
+    }
         .fondo {
             /*Posicion*/
             top: 20%;
@@ -347,9 +430,26 @@
             transition: all 0.5s ease;
 
         }
+        /*Text*/
+        .heroText {
+            /*Stlye*/
+            margin-top: 3%;
+            font-size: 35px;
+            width: 50%;
+        }
+        .FirmaAlbert  {
+            /*Size*/
+            height: 70px;
+        }
 }
 /*Laptops*/
 @media (min-width: 1025px) and (max-width: 1440px) {
+    .heroImgs {
+        height:550px;
+        padding-bottom: 10px;
+        overflow-y: hidden;
+        margin-top: 0px;
+    }
     /*Personas*/
     .PersonaUno {
         /*Size*/
@@ -383,6 +483,15 @@
         /*Posicion*/
         top: 33%;
         left: 48%;
+    }
+    .Photo2 {
+        /*Size*/
+        width: auto;
+        height: 250px;
+        /*Posicion*/
+        rotate: 10deg;
+        top: 17%;
+        left: 63%;
     }
 }
 
