@@ -1,0 +1,167 @@
+---
+import Downarrow from "./Downarrow.astro";
+---
+<div class="FrameThree">
+    <div class="FrameThreeImgs">
+         <!-- .festEmoji -->
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Fest.png" alt="Emoji" class="festEmoji" loading="lazy">
+        <!-- .middleImg -->
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Middle.png" alt="Middle" class="middleImg" loading="lazy">
+        <!-- .leftImg -->
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Phot_Frame3_Left.png" alt="left" class="leftImg" loading="lazy">
+        <!-- .rightImg -->
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame3_Right.png" alt="right" class="rightImg" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Butterfly_White.png" alt="Butterfly" class="WhButterfly" loading="lazy">
+        <a href="/nosotros" class="button">Ver más</a>
+    </div>
+</div>
+<Downarrow></Downarrow>
+<style>
+    /*Normal*/
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .FrameThree {
+        position: relative;
+        overflow: hidden;
+        padding: 50px 0;
+        margin-top: 20px;
+        height: 900px;
+
+    }
+    .FrameThreeImgs {
+        position: relative;
+        height: 900px;
+        overflow: hidden;
+    }
+   
+    .middleImg {
+        /*Size*/
+        width: auto;
+        height: 763px;
+        /*posicion*/
+        z-index: 10;
+        position: relative;
+        left: 43.5%;
+        top:50%;
+        transform: translate(-50% ,-60%);
+    }
+    .leftImg {
+        /*Size*/
+        width: auto;
+        height: 500px;
+        rotate:-20deg;
+        /*posicion*/
+        position: relative;
+        z-index: 9;
+        left: -42%;
+        top: -16%;
+    }
+    .rightImg {
+         /*Size*/
+         width: auto;
+        height: 450px;
+        /*posicion*/
+        position: relative;
+        rotate: 20deg;
+        z-index: 9;
+        left: 60%;
+        top: -64%;
+    }
+    .festEmoji {
+        /*Size*/
+        width: auto;
+        height: 115px;
+        /*Posicion*/
+        z-index: 11;
+        position: relative;
+        rotate: -20deg;
+        top: -10%;
+        left: 29%;
+    }
+    .WhButterfly {
+        /*Size*/
+        width: auto;
+        height:200px;
+        /*Posicion*/
+        z-index: 12;
+        position: relative;
+        top: -116%;
+        left: 34%;
+        rotate: 20deg;
+
+    }
+    /*Boton*/
+    .button {
+        top: -570px;        
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 20px 60px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-align: center;
+        z-index: 95;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 12px 18px rgba(0, 0, 0, 0.3);
+    }
+    
+    .button:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    /*Celulares*/
+    @media (max-width: 1080px) {
+
+    }
+    /*Tablet*/
+    @media (min-width: 600px) and (max-width: 1024px) {
+
+    }
+    /*Laptop*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        .middleImg {
+            height: 600px;
+            top:40%;
+            left:40%;
+            transform: translate(-50%, -50%);
+        }
+        .leftImg {
+            height: 300px;
+            transform: translateX(-30%);
+        }
+        .rightImg {
+            height: 350px;
+            top: -45%;
+        }
+        .festEmoji {
+            top: 2%;
+            left: 23%;
+        }
+        .WhButterfly {
+            top: -80%;
+            left:32%
+        }
+        .button {
+            transform: translateY(290%)
+        }
+        .FrameThree {
+            height: 800px;
+        }
+    }
+</style>
