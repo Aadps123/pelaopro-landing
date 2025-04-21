@@ -1,0 +1,280 @@
+---
+import Downarrow from "./Downarrow.astro";
+---
+<div class="Main">
+    
+    <div class="Cards">
+        <div class="Mcard">
+            <h1>MISIÓN</h1>
+            <p>Empoderar a jóvenes con herramientas, experiencias y mentorías que impulsen su desarrollo profesional, personal y emprendedor.</p>
+            <a href="/nosotros" class="button">Trayectoría</a>
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_1.png" alt="Nube1" class="CloudOne" loading="eager">
+        </div>
+        <div class="Vcard">
+            <h1>VISIÓN</h1>
+            <p>Ser un modelo de impacto juvenil en Panamá, capaz de replicarse en colegios de todo el país para empoderar a estudiantes con propósito, liderazgo y acción.</p>
+            <a href="/apoyanos" class="button">Apóyanos</a>
+            <h2>también lo puedes replicar!!!</h2>
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_2.png" alt="C2" class="CloudTwo" loading="eager">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Butterfly_Red.png" alt="M1" class="MRed" loading="eager">
+            <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Toggle.png" alt="toggle" class="Cursor" loading="eager">
+        </div>
+        
+    
+    <img src="" alt="" class="" loading="eager">
+    </div>
+</div>
+<Downarrow></Downarrow>
+<style>
+/* Normal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: Caveat;
+    font-size: 40px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 31px;
+    font-family: caveat;
+
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: caveat;
+}
+body {
+    overflow-x: hidden;
+}
+
+.Main {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    margin-top: 20px;
+    height: 850px;
+}
+
+/* Nuevo enfoque para las cards */
+.Cards {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.Mcard {
+    /*Size*/
+    height: 530.17px;
+    width: 417.31px;
+    /*Style*/
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.116), 0 0px 12px rgba(0, 0, 0, 0.2);
+    /*Posición*/
+    margin-right: 150px; /* Espacio fijo entre cards */
+    /*Animacion*/
+    transition: all 0.5s ease;
+}
+.Mcard h1 {
+    margin-top:45px;
+}
+.Vcard {
+    /*Size*/
+    height: 530.17px;
+    width: 417.31px;
+    /*Style*/
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.116), 0 0px 12px rgba(0, 0, 0, 0.2);
+    /*Posición*/
+    margin-left: 20px; /* Espacio fijo entre cards */
+    /*Animacion*/
+    transition: all 0.5s ease;
+}
+
+.button {
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 20px 60px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-align: center;
+        z-index: 95;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+        /*Animacion*/
+        transition: all 0.5s ease;
+    }
+    
+    .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 12px 18px rgba(0, 0, 0, 0.3);
+    }
+    
+    .button:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    /*Add-ons*/
+    .CloudOne {
+        /*Mov*/
+        left: -60%;
+        top: -20%;
+        position: relative;
+        z-index: 99;
+        display: flex;
+        rotate: 10deg;
+        /*Size*/
+        width: auto;
+        height: 350px;
+        /*Animacion*/
+        transition: all 0.5s ease;
+    }
+    .CloudTwo {
+        /*Size*/
+        position: relative;
+        z-index: 99;
+        display: flex;
+        rotate: -1deg;
+        top: -63%;
+        left: 85%;
+        /*Mov*/
+        width: auto;
+        height: 160px;
+        /*Animacion*/
+        transition: all 0.5s ease;
+    }
+    .MRed {
+        /*Mov*/
+        position: relative;
+        top: -110%;
+        left: 150%;
+        /*Animacion*/
+        transition: all 0.5s ease;
+    }
+    .Cursor {
+        /*Size*/
+        width: auto;
+        height: 50px;
+        rotate: -35deg;
+        /*Mov*/
+        z-index: 99;
+        position: relative;
+        top: -47%;
+        left: 55%;
+    }
+/* Celular */
+@media (max-width: 599px) {
+    .Main {
+        margin-top: 0;
+        height: 1100px;
+    }
+    .Cards {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Mcard, .Vcard {
+        
+        width: 300px;
+        margin: 15px 0; /* Espacio vertical en lugar de horizontal */
+    }
+    p{
+        width: 85%;
+        font-size: 26px
+    }
+    .Mcard  {
+        height: 400px;
+        
+    }
+    .Mcard h1 {
+        padding-top: 10px;
+    }
+    h2 {
+        opacity: 80%;
+        margin-top: 50px;
+    }
+    .Vcard {
+        margin-top: 52px;
+        height: 420px;
+    }
+    /*Add-ons*/
+    .CloudOne {
+        height: 200px;
+        transform: translate(20% ,-20%);
+    }
+    .CloudTwo {
+        transform: translateY(-30%);
+    }
+    .Cursor {
+        left: 80%;
+        transform: translatey( -260%);
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .Main {
+        height: 800px;
+    }
+    .Cards {
+        align-items: center;
+    }
+    
+    .Mcard  {
+        width: 350px;
+        margin-right: 0px; /* Espacio vertical en lugar de horizontal */
+    }
+    .Mcard p {
+        font-size: 26px ;
+    }
+    .Vcard {
+        width: 350px;
+    }
+    .Vcard h1 {
+        padding-top: 70px;
+    }
+    .Vcard p {
+        font-size:26px
+    }
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .Mcard {
+        margin-right: 15px;
+    }
+    
+    .Vcard {
+        margin-left: 15px;
+    }
+    .MRed {
+        transform: translateX(-110%);
+    }
+
+}
+</style>
