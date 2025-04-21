@@ -1,0 +1,171 @@
+---
+import Downarrow from "./Downarrow.astro"
+---
+<div class="Collage">
+    <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame4_Middle.png" alt="M" class="ImgMiddle" loading="eager">
+    <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame4_Left1.png" alt="L1" class="ImgLeftOne" loading="eager">
+    <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame4_Left2.png" alt="L2" class="ImgLeftTwo" loading="eager">
+    <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame4_Right1.png" alt="R1" class="ImgRightOne" loading="eager">
+    <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Photo_Frame4_Right2.png" alt="R2" class="ImgRightTwo" loading="eager">
+</div>
+<Downarrow></Downarrow>
+<style>
+    /* Normal */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
+
+    .Collage {
+        position: relative;
+        overflow: hidden;
+        padding: 50px 0;
+        height: 800px;
+    } 
+    .Collage img {
+        transition: all 0.5 ease;
+    }
+    /*Imgs*/
+    .ImgMiddle {
+        /*Size*/
+        width: auto;
+        height: 600px;
+        /*Mov*/
+        z-index: 50;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50% , -50%);
+    }  
+    .ImgLeftOne {
+        /*Size*/
+        width: auto;
+        height: 550px ;
+         /*Mov*/
+        z-index: 40;
+        position: relative;
+        left: 0%;
+        top:0%;
+        transform: translate(-120% ,0);
+        rotate: -20deg;
+    }
+    .ImgLeftTwo {
+        /*Size*/
+        width: auto;
+        height: 350px ;
+          /*Mov*/
+          z-index: 40;
+        position: relative;
+        left: -33%;
+        top:0%;
+        transform: translate(0 ,-65%);
+        rotate: -15deg;
+    }
+    .ImgRightOne {
+        /*Size*/
+        width: auto;
+        height: 450px ;
+        /*Mov*/
+        z-index: 30;
+        position: relative;
+        left: -15%;
+        top:0%;
+        transform: translate(0 ,-30%);
+        rotate: 15deg;
+    }
+    .ImgRightTwo {
+        /*Size*/
+        width: auto;
+        height: 450px ;
+        /*Mov*/
+        z-index: 40;
+        position: relative;
+        left: 55%;
+        top:0%;
+        transform: translate(0 ,-70%);
+        rotate: 10deg;
+    }
+    /*Celular*/
+    @media (max-width: 599px) {
+        .Collage {
+            height: 500px;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .ImgMiddle {
+            height: 300px;
+        }
+        .ImgLeftOne  {
+            display: flex;
+            left: 15%;
+            height: 200px;
+            z-index: 90;
+            transform: translateY(-19vh);
+        }
+        .ImgLeftTwo {
+            display: none;
+        }
+        .ImgRightOne {
+            display: none;
+        }
+        .ImgRightTwo {
+            height: 150px;
+            top: -30vh;
+            z-index: 90;
+        }
+    }
+    /*Tablet*/
+    @media (min-width: 600px) and (max-width: 1024px) {
+        .Collage {
+            height: 750px;
+        }
+        .ImgMiddle {
+            height: 550px;
+        }
+        .ImgLeftOne {
+            display: none;
+        }
+        .ImgLeftTwo {
+            display: none;
+        }
+        .ImgRightOne {
+            z-index: 90;
+            top: -40%;
+            left: -1vh;
+            rotate: 0deg;
+        }
+        .ImgRightTwo {
+            z-index: 90;
+            height: 300px;
+            top: -20vh;
+            left:  25vh;
+            rotate: -20deg;
+        }
+        
+    }
+    /*Laptop*/
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        .ImgLeftOne {
+            height: 450px;
+            left: -20%;
+        }
+        .ImgLeftTwo {
+            left: -60%;
+        }
+        .ImgRightOne {
+            left: 56%;
+            height: 400px;
+            top: 0%;
+            transform: translateY(-160%);
+        }
+        .ImgRightTwo {
+            height: 350px;
+            left: 40%;
+            transform: translateY(-100%)
+        }
+    }
+</style>
