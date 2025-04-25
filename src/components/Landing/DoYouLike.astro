@@ -1,0 +1,255 @@
+---
+import Downarrow from "./Downarrow.astro"
+---
+<div class="Main">
+    <div class="Text">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/pregunta_3.png" alt="Pregunta3" class="PreguntaTres" loading="lazy">
+        <h4>Bueno, si te gusto el proyecto actualmente Pelao’Pro esta en la fase de investigación para replicar el proyecto en otras partes del país,ero también te podemos brindar estas opciones:</h4>
+    </div>
+    <div class="Cards">
+        <div class="Chatbot">
+            <div class="ChatbotText">
+                <div class="ChatbotP"> <p>Sí eres un@ <strong> joven entusiasmado✨ </strong>por el conocimiento continuo📗 puedes seguirnos en nuestra cuenta de Instagram como <a href="https://www.instagram.com/pelao.pro/" style=" color: rgb(24, 27, 206); font-weight: bold;">@pelao.pro</a>, para enterarte sobre todas las noticias respecto al programa🫢</p></div>
+                <p style="padding-top: 20px;">Pero también puedes visitar nuestro <strong>Chatbot😎</strong> para preguntar sobre diferentes oportunidades de becas, concursos, etc.</p>
+                <a href="/chatbot" class="button">Chatbot</a>
+            </div>
+        </div> 
+        <div class="Replicabilidad">
+            <div class="RepiText">
+                <p>Sí eres un <strong>maestr@ </strong> 🧑‍🏫al cual le gusto el proyecto, adivina Pelao’Pro creo un programa de replicabilidad en el cual se te introducen todos los temas a tratar desde <strong>“cero” </strong>y con <strong>nuevas metodologías</strong> para aplicar en tu salón sin importar nada.</p>
+                <a href="/apoyanos" class="button">Replicabilidad</a>
+            </div>
+        </div>
+    </div>
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/nube_1.png" alt="Cloud1" class="CloudOne" loading="lazy">
+        <img src="https://cdn.jsdelivr.net/gh/Aadps123/pelaopro-landing@main/Cloudfare/Emoji_Sus.png" alt="EmojiSus" class="Emoji" loading="lazy">
+    
+</div>
+<Downarrow></Downarrow>
+<style>
+    /* Normal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+.CloudOne {
+    position: relative;
+    top: -35%;
+    left: 18%;
+    width: auto;
+    height: 200px;
+    z-index: 10;
+}
+
+.Emoji {
+    position: relative;
+    height: 50px;
+    top: -110%;
+    left: 39.5%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.ChatbotText {
+    margin-top: 10vh;
+    
+}
+.RepiText {
+    padding-top: 15vh;
+}
+h4 {
+    padding-top: 30px;
+    text-align: center;
+    width:55%;
+    font-size: 24px ;
+    margin: 0 auto;
+    font-weight: 300;
+}
+.PreguntaTres {
+    margin-top: 100px;
+    width: auto;
+    height: 90px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+.Main {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+    margin-top: 20px;
+    height: 1100px;
+}
+.Cards {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    padding-top: 50px;
+}
+
+.Chatbot {
+    /*Size*/
+    height: 520.17px;
+    width: 417.31px;
+    /*Style*/
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.116), 0 0px 12px rgba(0, 0, 0, 0.2);
+    /*Posición*/
+    margin-right: 50px; /* Espacio fijo entre cards */
+    /*Animacion*/
+    transition: all 0.5s ease;
+}
+.Replicabilidad {
+    /*Size*/
+    height: 520.17px;
+    width: 417.31px;
+    /*Style*/
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.116), 0 0px 12px rgba(0, 0, 0, 0.2);
+    /*Posición*/
+    margin-left: 10px; /* Espacio fijo entre cards */
+    /*Animacion*/
+    transition: all 0.5s ease;
+}
+
+.button {
+        display: block;
+        width: fit-content;
+        margin: 20px auto;
+        padding: 20px 60px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-align: center;
+        z-index: 95;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+        /*Animacion*/
+        transition: all 0.5s ease;
+    }
+    
+    .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 12px 18px rgba(0, 0, 0, 0.3);
+    }
+    
+    .button:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+/*Celular*/
+@media (max-width: 599px) {
+    .Main {
+        margin-top: 0;
+        height: 1670px;
+    }
+    .Cards {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+    }
+    h4 {
+        text-align: justify;
+    }
+   
+    .Chatbot, .Replicabilidad {
+        
+        width: 300px;
+        margin: 15px 0; /* Espacio vertical en lugar de horizontal */
+        transition: all 0.5s ease;
+    }
+    .ChatbotText {
+        margin-top: 7vh;
+    }
+    p{
+        width: 85%;
+        font-size: 18px;
+
+    }
+    .Chatbot  {
+        height: 500px;
+    }
+    .Replicabilidad {
+        margin-top: 52px;
+        height: 400px;
+    }
+    .RepiText {
+        padding-top: 8vh;
+    }
+    .CloudOne {
+        display: none;
+    }
+    .Emoji {
+        display: none;
+    }
+}
+/*Tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    .Main {
+        height: 1050px;
+    }
+    .Cards {
+        align-items: center;
+        padding-top: 0;
+        height: 600px ;
+    }
+    .ChatbotText {
+    margin-top: 4vh;
+    }
+    .RepiText {
+    margin-top: -6.5vh;
+    }
+    .Chatbot  {
+        width: 350px;
+        margin-right: 0px; /* Espacio vertical en lugar de horizontal */
+    }
+    .Chatbot p {
+        font-size: 20px ;
+    }
+    .Replicabilidad {
+        width: 350px;
+    }
+    .Replicabilidad p {
+        font-size:20px
+    }
+    .CloudOne {
+        top: -12%;
+        left: 3%;
+    }
+    .Emoji {
+        display: none;
+    }
+    .PreguntaTres {
+        margin-top: 0px;
+    }
+}
+/*Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .Chatbot {
+        margin-right: 15px;
+    }
+    
+    .Replicabilidad {
+        margin-left: 15px;
+    }
+ 
+}
+</style>
