@@ -1,0 +1,140 @@
+---
+import Downarrow from './Downarrow.astro'
+---
+<div class="form-container">
+    <h2 >Contáctanos</h2>
+    <form action="https://formsubmit.co/aaron507ds@gmail.com" method="POST" class="contact-form">
+      
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required placeholder="Tu nombre">
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Correo electrónico o Número celular:</label>
+        <input type="email" name="email" id="email" required placeholder="Tu correo 📧 o número de 📞 ">
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Mensaje:</label>
+        <textarea name="message" id="message" required placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    <div class="success-message">
+      ¡Gracias por tu mensaje! Te responderemos pronto.
+    </div>
+    <div class="error-message">
+      Algo salió mal, por favor intenta de nuevo.
+    </div>
+  </div>
+  <Downarrow>
+  <style>
+    .form-container {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      margin-bottom:100px;
+    }
+    
+    h2 {
+      color: black;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    label {
+      color: black;
+      font-weight: 500;
+    }
+    
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #e2e2e2;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    small {
+      font-size: 0.75rem;
+      color: #666;
+    }
+    
+    .submit-btn {
+      background-color: black;
+      color: white;
+      padding: 0.875rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    
+    .submit-btn:hover {
+      background-color: #333;
+    }
+    
+    .error-message {
+      color: #d32f2f;
+      font-size: 0.875rem;
+      display: none;
+    }
+    
+    .success-message {
+      color: #2e7d32;
+      font-size: 0.875rem;
+      display: none;
+      padding: 0.75rem;
+      background-color: #e8f5e9;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 1rem;
+        border-radius: 0;
+        box-shadow: none;
+        width: 90%;
+        width: 200px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+    }
+    
+      input, textarea {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+      }
+      
+      .submit-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+  
