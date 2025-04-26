@@ -1,0 +1,76 @@
+[
+  {
+    "keywords": [
+      "hola",
+      "saludos",
+      "buenos días",
+      "buenos dias",
+      "buenas"
+    ],
+    "response": "¡Hola! ¿En qué puedo ayudarte hoy?"
+  },
+  {
+    "keywords": [
+      "gracias",
+      "agradecido",
+      "te lo agradezco"
+    ],
+    "response": "¡De nada! Estoy aquí para ayudar."
+  },
+  {
+    "keywords": [
+      "adios",
+      "adiós",
+      "hasta luego",
+      "chao",
+      "nos vemos"
+    ],
+    "response": "¡Chao! Ha sido un placer ayudarte."
+  },
+  {
+    "keywords": [
+      "ayuda",
+      "puedes hacer",
+      "funciones"
+    ],
+    "response": "Puedo responder preguntas simples basadas en palabras clave relacionado a Pelao'Pro y la educación en Panamá. ¡Prueba preguntándome algo!"
+  },
+
+{
+  "keywords": [
+    "contacto",
+    "dónde",
+    "información"
+  ],
+  "response": "Puedes seguirnos en Instagram @pelao.pro o visitar nuestra página web para más información y formas de contacto."
+},
+{
+  "keywords": [
+    "inicio",
+    "empezar",
+    "comenzar"
+  ],
+  "response": "Para comenzar, dime qué información necesitas sobre Pelao'Pro o escribe una categoría: objetivos, actividades, alianzas, cursos, replicación o contacto."
+},
+{
+"keywords": [
+      "voluntariado",
+      "participar",
+      "ayudar"
+    ],
+    "response": "Si quieres ser voluntario en Pelao'Pro, contáctanos por Instagram: @pelao.pro  ¡Tu apoyo hace la diferencia!"
+},
+{
+    "keywords": [
+      "Pelao",
+      "Qué es PelaoPro",
+      "pelaopro",
+      "que es pelaopro",
+      "PelaoPro",
+      "pelao´pro",
+      "pela´o pro",
+      "pela´opro"
+    ],
+    "response": "​Pelao'Pro es un proyecto piloto del Laboratorio Latinoamericano de Acción Ciudadana (LLAC) que busca facilitar la orientación académica y laboral a jóvenes en situaciones de riesgo social. Este programa fue creado por 10 jóvenes del LLAC con el objetivo de guiar a otros jóvenes en su desarrollo personal y profesional. "
+  }
+]
