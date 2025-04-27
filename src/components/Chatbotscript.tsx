@@ -30,7 +30,7 @@ const styles = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: '90%',
-    maxWidth: '500px',
+    maxWidth: '700px',
     height: '65vh',
     maxHeight: '600px',
     backgroundColor: '#1e1e1e',
@@ -39,7 +39,7 @@ const styles = {
     overflow: 'hidden',
     display: 'flex',
     flexDirection: 'column',
-    fontSize: '12px'
+    fontSize: '16px'
   },
   header: {
     padding: '12px',
