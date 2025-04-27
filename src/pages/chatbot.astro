@@ -1,17 +1,24 @@
 ---
 import Chatbotscript from '../components/Chatbotscript.tsx';
 import NavBarWhite from '../components/Landing/NavBarWhite.astro';
+import Backarrow from '../components/Landing/Backarrow.astro';
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image" href="/temp favi.png" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+    <title>Chatbot 🤖</title>
 </head>
 <body>
     <NavBarWhite></NavBarWhite>
     <Chatbotscript client:load />
+    <Backarrow></Backarrow>
+
+    
 </body>
 </html>
 <style>
