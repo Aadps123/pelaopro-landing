@@ -133,8 +133,12 @@ const styles = {
 export default function Chatbot() {
   const keywords: Keyword[] = [
     { 
-      keywords: ['hola', 'pelaopro', 'saludos'], 
+      keywords: ['hola', 'Como estas', 'saludos'], 
       response: '¡Hola! ¿En qué puedo ayudarte?' 
+    },
+    { 
+      keywords: ["Pelao'Pro", 'pelaopro', 'pelao pro', 'pelapro','pela pro','PelaoPro'], 
+      response: "Pelao'Pro es un proyecto piloto del Laboratorio Latinoamericano de Acción Ciudadana (LLAC) que busca facilitar la orientación académica y laboral a jóvenes en situaciones de riesgo social. Este programa fue creado por 10 jóvenes del LLAC con el objetivo de guiar a otros jóvenes en su desarrollo personal y profesional. "
     },
   ];
 
