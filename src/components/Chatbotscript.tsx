@@ -132,15 +132,92 @@ const styles = {
 
 export default function Chatbot() {
   const keywords: Keyword[] = [
-    { 
-      keywords: ['hola', 'Como estas', 'saludos'], 
-      response: '¡Hola! ¿En qué puedo ayudarte?' 
+    {
+      keywords: ['hola', 'como estas', 'saludos'],
+      response: '¡Hola! ¿En qué puedo ayudarte?'
     },
-    { 
-      keywords: ["Pelao'Pro", 'pelaopro', 'pelao pro', 'pelapro','pela pro','PelaoPro'], 
-      response: "Pelao'Pro es un proyecto piloto del Laboratorio Latinoamericano de Acción Ciudadana (LLAC) que busca facilitar la orientación académica y laboral a jóvenes en situaciones de riesgo social. Este programa fue creado por 10 jóvenes del LLAC con el objetivo de guiar a otros jóvenes en su desarrollo personal y profesional. "
+    {
+      keywords: ["Pelao'Pro", 'pelaopro', 'pelao pro', 'pelapro', 'pela pro', 'PelaoPro'],
+      response: "Pelao'Pro es un proyecto piloto del Laboratorio Latinoamericano de Acción Ciudadana (LLAC) que busca facilitar la orientación académica y laboral a jóvenes en situaciones de riesgo social. Este programa fue creado por 10 jóvenes del LLAC con el objetivo de guiar a otros jóvenes en su desarrollo personal y profesional."
     },
+    {
+      keywords: [
+        'becas', 'becas en panamá', 'concursos en panamá', 'cómo aplicar a los concursos',
+        'universidades', 'becas para universidades',
+        'programas de estudio UTP', 'programas de estudio UP', 'programas de estudio UNACHI',
+        'preparación examen UTP', 'admisión UP', 'admisión UNACHI'
+      ],
+      response: `Aquí tienes información separada por tema:
+  
+  Universidades: Puedes prepararte para ingresar a universidades como la UTP, UP y UNACHI mediante programas de estudio, guías y simulacros. Puedo darte más detalles de cada una si me lo pides.
+  
+  Becas: En Panamá existen becas ofrecidas por entidades como IFARHU, SENACYT y algunas fundaciones privadas. Hay becas por mérito, necesidad económica, deportes y más.
+  
+  Concursos: Hay concursos académicos que ofrecen becas como premio. También hay concursos del IFARHU y otras instituciones. Si quieres, puedo darte ejemplos específicos.
+  
+  Solo dime sobre qué quieres saber más: universidades, becas o concursos.`
+    },
+    // UNIVERSIDADES
+    {
+      keywords: ['utp', 'universidad tecnológica de panamá'],
+      response: 'La Universidad Tecnológica de Panamá (UTP) ofrece una prueba de admisión con enfoque en matemáticas, español y lógica. Puedes prepararte con guías oficiales, simulacros y cursos de repaso. ¿Quieres que te muestre dónde encontrarlos?'
+    },
+    {
+      keywords: ['up', 'universidad de panamá'],
+      response: 'La Universidad de Panamá (UP) también tiene una prueba de admisión general. Puedes conseguir guías, temarios y videos en línea. ¿Te gustaría que te comparta un sitio confiable para estudiar?'
+    },
+    {
+      keywords: ['unachi', 'universidad autónoma de chiriquí'],
+      response: 'La UNACHI ofrece admisión mediante pruebas y entrevistas. El contenido varía por facultad. Hay cursos previos y guías disponibles. ¿Te interesa alguna carrera específica en la UNACHI?'
+    },
+    {
+      keywords: ['guías UTP', 'preparación UTP', 'simulacros UTP'],
+      response: 'Puedes prepararte para el examen de admisión de la UTP con las guías oficiales disponibles aquí: https://admision.utp.ac.pa. También puedes revisar simulacros y videos en YouTube buscando "Simulacro UTP Panamá".'
+    },
+    {
+      keywords: ['guías UP', 'preparación UP', 'simulacros UP'],
+      response: 'La Universidad de Panamá publica información sobre su prueba de admisión aquí: https://up.ac.pa/admisiones. Puedes buscar simulacros en YouTube o usar plataformas como Aprendo+ de Meduca.'
+    },
+    {
+      keywords: ['guías UNACHI', 'preparación UNACHI', 'simulacros UNACHI'],
+      response: 'UNACHI publica información sobre su admisión en este sitio: https://unachi.ac.pa. También puedes solicitar las guías directamente en sus redes sociales o la oficina de admisión.'
+    },
+    // BECAS
+    {
+      keywords: ['becas ifarhu', 'becas en panamá ifarhu'],
+      response: 'El IFARHU ofrece becas por concurso, por necesidad económica, para estudios universitarios, deportivos y para el extranjero. Debes registrarte en línea y cumplir con los requisitos según el tipo de beca. ¿Quieres saber cómo aplicar?'
+    },
+    {
+      keywords: ['postular beca IFARHU', 'requisitos IFARHU'],
+      response: 'Para postularte a una beca del IFARHU, visita https://www.ifarhu.gob.pa/becas/ y selecciona el tipo de beca que te interesa. Debes registrarte, subir tus documentos y esperar las fechas de convocatoria.'
+    },
+    {
+      keywords: ['senacyt', 'becas senacyt'],
+      response: 'SENACYT da becas principalmente en áreas científicas y tecnológicas, incluyendo maestrías y doctorados en el extranjero. También apoya estudios técnicos y universitarios. ¿Quieres saber si hay convocatorias abiertas?'
+    },
+    {
+      keywords: ['convocatoria SENACYT', 'becas SENACYT abiertas'],
+      response: 'Puedes ver todas las convocatorias activas de SENACYT en este enlace: https://www.senacyt.gob.pa/convocatorias. Están enfocadas en ciencia, tecnología e innovación.'
+    },
+    {
+      keywords: ['fundaciones becas', 'becas privadas'],
+      response: 'Algunas fundaciones como Fundación Piero (https://www.fundacionpiero.org) y Fundación Casco Antiguo apoyan a jóvenes con becas educativas. Puedes seguirlas en redes sociales o visitar sus webs para aplicar.'
+    },
+    // CONCURSOS
+    {
+      keywords: ['concursos', 'concursos para becas', 'concursos educativos'],
+      response: 'Hay concursos organizados por IFARHU, MEDUCA, SENACYT y fundaciones privadas donde puedes ganar becas o apoyos económicos. También existen olimpiadas académicas que premian con oportunidades. ¿Quieres que te dé un ejemplo actual?'
+    },
+    {
+      keywords: ['concurso ifarhu 2025', 'beca por concurso ifarhu'],
+      response: 'El Concurso General de IFARHU es una beca basada en mérito académico. Las convocatorias se publican en https://www.ifarhu.gob.pa y en sus redes sociales. Generalmente abren a inicios de cada año escolar.'
+    },
+    {
+      keywords: ['olimpiadas académicas', 'concursos de ciencia panamá'],
+      response: 'En Panamá se realizan olimpiadas de matemáticas, ciencias y tecnología a través del MEDUCA y SENACYT. Algunas dan becas o reconocimientos. Consulta https://www.educapanama.edu.pa o https://www.senacyt.gob.pa.'
+    }
   ];
+  
 
   const [messages, setMessages] = useState<Message[]>([
     { sender: 'bot', text: '¡Hola! Soy el asistente virtual de Pelao\'Pro. ¿En qué puedo ayudarte hoy?' }

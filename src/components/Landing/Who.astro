@@ -24,7 +24,7 @@ import Downarrow from './Downarrow.astro';
     </div>
     <div class="content-container">
         <p class="parrafo">Pelao'Pro es un programa piloto que acompaña a los jóvenes en su camino hacia un futuro con más oportunidades, brindándoles herramientas para tomar decisiones informadas y acceder a las mejores opciones.</p>
-        <a href="/nosotros" class="button">Descubre</a>
+        <a href="https://pelaopro.vercel.app/" class="button">Descubre</a>
     </div>
 </div>
 <Downarrow></Downarrow>
@@ -289,7 +289,8 @@ import Downarrow from './Downarrow.astro';
         
         .button {
             padding: 15px 40px;
-            transform: translateY(-180%)
+            transform: translateY(-180%);
+            z-index: 1000;
         }
     }
 
@@ -333,6 +334,7 @@ import Downarrow from './Downarrow.astro';
         }
         .button {
             transform: translateY(-55%);
+            z-index: 1000;
         }
         .Emoji {
             height: 70px;
