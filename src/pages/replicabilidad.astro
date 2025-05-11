@@ -1,0 +1,100 @@
+---
+import NavBarWhite from "../components/Landing/NavBarWhite.astro";
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image" href="/temp favi.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- SEO -->
+		<meta name="description" content="Pelao'Pro te ayuda a descubrir tu pasión, prepararte para la universidad y emprender desde joven." />
+		<meta name="keywords" content="emprendimiento, jóvenes, futuro, educación, universidad, innovación, panamá, becas, Pelao Pro, pelaopro, PelaoPro, Pelao'Pro" />
+		<meta name="author" content="PelaoPro" />
+		<meta property="og:title" content="Pelao'Pro | Educación y Emprendimiento para Jóvenes" />
+		<meta property="og:description" content="Descubre tu pasión, prepárate para la universidad y emprende desde joven con Pelao'Pro." />
+		<meta name="author" content="PelaoPro" />
+		<title>Replicabilidad📖</title>
+	</head>
+<body>
+    <div class="Main">
+        <NavBarWhite></NavBarWhite>
+        <div class="Other">
+            <div class="content-container">
+                <div class="Text">
+                    <h1 class="h1">//👷Creando el doc de replicabilidad volver a ver el 25 de mayo</h1>
+                </div>
+                <a href="https://pelaopro.vercel.app" class="button">Inicio</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    .Main {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body {
+        background-color: black;
+        min-height: 100vh;
+    }
+    
+    .Other {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .Text {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .button {
+        display: block;
+        width: fit-content;
+        padding: 20px 60px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3), 0 10px 14px rgba(0, 0, 0, 0.2);
+    }
+</style>
