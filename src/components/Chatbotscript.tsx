@@ -54,7 +54,7 @@ const responses = {
     ifarhu: {
       general: [
         {
-          keywords: ['becas ifarhu', 'becas del ifarhu', 'ifarhu general', 'ifarhu'],
+          keywords: ['becas ifarhu', 'becas del ifarhu', 'ifarhu general', 'ifarhu', 'ifaru'],
           response: '🎓 El IFARHU ofrece becas como: Excelencia Académica 🏅, Concurso General 📋, Cultura 🎭, Deporte 🏃‍♂️, y Necesidad Económica 💰. También da préstamos para estudios universitarios en Panamá o el extranjero. Ejemplo: Beca de Excelencia para estudiantes con promedio de 4.5 o más.'
         }
       ],
@@ -188,7 +188,7 @@ const responses = {
           response: '🍁 Becas de la Embajada de Canadá:\n1️⃣ Programa "Vanier Canada Graduate Scholarships" para posgrado\n2️⃣ Buen expediente académico y proyecto de investigación\n3️⃣ Aplicar en la página oficial del programa\n🔗 https://vanier.gc.ca'
         },
         {
-          keywords: ['beca embajada estados unidos', 'aplicar beca eeuu', 'becas estados unidos', 'embajada estadounidense', 'becas estadounidenses','becas de la embajada de eeuu'],
+          keywords: ['beca embajada estados unidos', 'aplicar beca eeuu', 'becas estados unidos', 'embajada estadounidense', 'becas estadounidenses','becas de la embajada de eeuu', "becas embajada de estados unidos"],
           response: '🇺🇸 Becas de la Embajada de EE.UU.:\n1️⃣ Programas como Fulbright para estudios de posgrado\n2️⃣ Buen desempeño académico y experiencia extracurricular\n3️⃣ Aplicar en la página oficial de la Embajada o Fulbright\n🔗 https://pa.usembassy.gov/es/education-culture-es/'
         },
         {
